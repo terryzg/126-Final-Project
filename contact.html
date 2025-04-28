@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>This appears in the browser tab</title>
+    <link rel="stylesheet" href="css/nav-styles.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/responsive-nav.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-collapse ">
+            <ul>
+                <li class="menu-item"><a  href= "home.html" data-scroll>Home</a></li>
+                <li class="menu-item"><a  href= "about.html" data-scroll>About</a></li>
+                <li class="menu-item"><a href= "services.html" data-scroll>Services</a></li>
+                <li class="menu-item"><a href= "contact.html" data-scroll>Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="lucida main">
+        <div class="contact">
+            <h1>Contact Us</h1>
+            <h2>Feel free to fill out a form, drop us a email, or call us.</h2>
+            <p>📞123-456-7890</p>
+            <p>✉️mowing@email.com</p>
+            <p>📍Chapel Hill</p>
+        </div>
+        
+        <form class = "main-form" action="/submit" method="POST">
+            <div class="form-group">
+                <label>Name</label>
+                <div class="form-row">
+                <input type="text" name="first_name" placeholder="First*" required>
+                <input type="text" name="last_name" placeholder="Last*" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="example@email.com*" required>
+            </div>
+            <div class="form-group">
+                <label>Phone (optional)</label>
+                <input type="tel" name="phone" placeholder="xxx-xxx-xxxx">
+            </div>
+            <div class="form-group">
+                <label>Message</label>
+                <textarea name="message" rows="5" placeholder="Type your message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <section class="footer-content">
+            <div class="company-info">
+            <h2>Serving Chapel Hill And More</h2>
+            <p>Since 2000, Terry and Anthony Lawn Care LLC has been proudly serving Chapel Hill and surrounding areas with high quality landscaping solutions.</p>
+        </div>
+
+        <div class="contact-info">
+            <h2>Get In Touch Today</h2>
+            <p><strong>📍 Located:</strong> Address</p>
+            <p><strong>📬 Mailbox:</strong> Address</p>
+            <p><strong>✉️ Email:</strong> Email</p>
+            <p><strong>🕒 Monday to Friday:</strong> Hours</p>
+
+            <a href="contact.html" class="contact-button">Contact Us</a>
+        </div>
+        </section>
+    </footer>
+
+    <script>
+        var nav = responsiveNav(".nav-collapse")
+    </script>
+</body>
+</html>
