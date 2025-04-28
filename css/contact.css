@@ -1,0 +1,175 @@
+body {
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    background: lightgreen;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 1rem;
+    }
+
+.nav-list a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main {
+    display: grid;
+    padding: 10px 3rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background-color: darkgreen;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: green;
+}
+
+label {
+    font-weight: bold;
+}
+
+section h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+section h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+section p {
+    font-size: 1rem;
+    margin-top: 3px;
+}
+
+.footer {
+    background-color: #d7e8d0;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    max-width: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-info h2, .contact-info h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.company-info p, .contact-info p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.contact-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: darkgreen;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover,
+.contact-button:focus {
+    background-color: green;
+}
+
+
+.lucida {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .contact {
+        display: flex;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .main-form {
+        padding: 2vw;
+    }
+
+    section h1 {
+        font-size: clamp(45px, 4vw, 400vw);
+    }
+    
+    section h2 {
+        font-size: clamp(20px, 2vw, 400vw);
+    }
+    
+    section p {
+        font-size: clamp(15px, 1.5vw, 400vw);
+        margin-top: 15px;
+    }
+
+    .company-info, .contact-info {
+        width: 45%;
+    }
+}

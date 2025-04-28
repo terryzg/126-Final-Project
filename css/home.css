@@ -1,0 +1,152 @@
+body{
+  font-family: "Boldonse", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header {
+  background: lightgreen;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  justify-content: end;
+
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 1rem;
+ 
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.image1{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  padding-top: 100px;
+}
+
+.about {
+  padding: 1rem;
+  text-align: center;
+}
+
+.image{
+  max-width: 50%;
+}
+
+p{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section h2{
+  font-size: 46px;
+}
+
+.footer {
+  background-color: #d7e8d0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-content {
+  max-width: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.company-info h2, .contact-info h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.company-info p, .contact-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.contact-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 1.5rem;
+  background-color: darkgreen;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.contact-button:hover,
+.contact-button:focus {
+  background-color: green;
+}
+
+
+.lucida {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+@media screen and (min-width: 768px) {
+  .nav-collapse ul {
+  flex-direction: row;
+  align-items: flex-end;
+}
+ 
+  .nav-collapse li {
+    width: auto;
+  }
+
+  .nav-collapse a {
+    padding: 1.02em 2em;
+    text-align: center;
+    border-top: 0;
+    margin: 0;
+  }
+
+  .nav-collapse ul ul a {
+    display: none;
+  }
+
+  .nav-collapse.closed {
+    max-height: none;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .footer-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.company-info, .contact-info {
+    width: 45%;
+}
+
+.service-text {
+    font-size: 2.5rem;
+}
+
+.content-text {
+    font-size: 1.5rem;
+}
+}
